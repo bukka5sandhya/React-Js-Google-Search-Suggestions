@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+In this project, let's build a Google Search Suggestions app by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Refer to the image below:
 
-## Available Scripts
+![image](https://github.com/bukka5sandhya/React-Js-Google-Search-Suggestions/assets/133884532/ab215fb8-a8b4-4faa-960a-fd72b3ac3c00)
 
-In the project directory, you can run:
+https://assets.ccbp.in/frontend/content/react-js/google-search-suggestions-output.gif
 
-### `npm start`
+Design Files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Click to view
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Extra Small (Size < 576px) and Small (Size >= 576px)
 
-### `npm test`
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Set Up Instructions
 
-### `npm run build`
+Click to view
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Download dependencies by running npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start up the app using npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Completion Instructions
 
-### `npm run eject`
+Functionality to be added
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app must have the following functionalities
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Initially, all suggestions in the suggestionsList should be displayed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+When a value is provided in the search input, then display the suggestions which includes the search input irrespective of case
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+When the arrow of a suggestion is clicked, then the value of the search input should be updated with the respective suggestion clicked
 
-## Learn More
+The GoogleSuggestions component receives the suggestionsList as a prop. It consists of a list of suggestion objects with the following properties in each suggestion object
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Key	Data Type
+id	Number
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+suggestion	String
 
-### Code Splitting
+Components Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://github.com/bukka5sandhya/React-Js-Google-Search-Suggestions/assets/133884532/72f3359c-8f3a-4fc7-ac4e-f91fed17cd5e)
 
-### Analyzing the Bundle Size
+Implementation Files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Use these files to complete the implementation:
 
-### Making a Progressive Web App
+src/components/GoogleSuggestions/index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+src/components/GoogleSuggestions/index.css
 
-### Advanced Configuration
+src/components/SuggestionItem/index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+src/components/SuggestionItem/index.css
 
-### Deployment
+Quick Tips
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Click to view
 
-### `npm run build` fails to minify
+You can use the box-shadow CSS property to apply the box-shadow effect to containers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+box-shadow: 0px 4px 16px 0px #bfbfbf;
+
+![image](https://github.com/bukka5sandhya/React-Js-Google-Search-Suggestions/assets/133884532/b9ff8b23-d16f-4b48-b908-c097c696e078)
+
+You can use the cursor CSS property to specify the mouse cursor to be displayed when pointing over an element
+
+ cursor: pointer;
+
+
+![image](https://github.com/bukka5sandhya/React-Js-Google-Search-Suggestions/assets/133884532/0d77bf64-2ab1-4c7e-9dc6-15de302b00a1)
+
+
+You can use the below outline CSS property for buttons and input elements to remove the highlighting when the elements are clicked
+
+ outline: none;
+
+Resources
+
+Image URLs
+
+https://assets.ccbp.in/frontend/react-js/google-logo.png alt should be google logo
+
+https://assets.ccbp.in/frontend/react-js/google-search-icon.png alt should be search icon
+
+https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png alt should be arrow
+
+Colors
+
+Hex: #bfbfbf
+
+Hex: #64748b
+
+Hex: #475569
+
+Font-families
+
+Roboto
+
+Things to Keep in Mind
+
+All components you implement should go in the src/components directory.
+
+Don't change the component folder names as those are the files being imported into the tests.
+
+Do not remove the pre-filled code
+
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
